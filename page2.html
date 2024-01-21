@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Food for Thought: Find Your Restaurant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    h1{
+      font-family: "Raleway", sans-serif;
+      text-align: left;
+      margin-left: 20px;
+    }
+    html {
+      height: 100%;
+      width: 100%;
+      scroll-behavior: smooth;
+      background-color:#99b899;
+      text-decoration: none;
+
+    }
+    #ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: seagreen;
+      top: 0;
+      width: 100%;
+
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      font-family: "Raleway", sans-serif;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    
+    li a:hover:not(.active) {
+      background-color: #111;
+    }
+
+    .active {
+      background-color: #04AA6D;
+    }
+
+        html {
+          height: 100%;
+          width: 100%;
+        }
+        #searchcity {
+          width: 100%; 
+          font-size: 20px; 
+          padding: 12px 20px 12px 40px; 
+          border: 1px solid #ddd;
+          margin-bottom: 12px; 
+          font-family: "Raleway", sans-serif;
+
+        }
+
+        #cities {
+          list-style-type: none;
+          margin: 0;
+          
+          padding: 0;
+        }
+h2{
+  font-family: 'Patrick Hand', cursive;
+}
+        #cities li a {
+          border: 3px solid  #000000; 
+          border-radius: 2%;
+          margin-top: -1px;
+          background-color: #fff5d0; 
+          padding: 12px; 
+          text-decoration: none; 
+          font-size: 18px; 
+          color: black; 
+          display: block; 
+        }
+
+        #cities li a:hover {
+          background-color:#ffe599; 
+        }
+
+th{
+  font-size: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #fff5d0;
+}
+    td{
+      font-size: 20px;
+      font-family: 'Patrick Hand', cursive;
+      padding: 10px;
+      background-color: #fff5d0;
+    }
+    table{
+      border-collapse: collapse;
+      margin: 15px;
+    }
+
+    .Vacaville{
+      font-size: 33px;
+    }
+  </style>
+</head>
+<body>
+  <ul id="ul">
+  <li><a href="index.html">Problem Statement</a></li>
+  <li><a class="active" href="page2.html">Restaurants Near Me</a></li>
+  <li><a   href="page3.html">Apply as a Food Donor</a></li>
+  </ul>
+<br>
+  <h1> Restaurants Near Me <h1>
+    
+  <input type="text" id="searchcity" onkeyup="myFunction()" placeholder="Search for your city...">
+
+<br>
+  <ul id="cities">
+    <li><a href="#San Francisco">San Francisco</a></li>
+    <li><a href="#San Jose">San Jose</a></li>
+
+    <li><a href="#Oakland">Oakland</a></li>
+    <li><a href="#Sacramento">Sacramento</a></li>
+
+    <li><a href="#Vacaville">Vacaville</a></li>
+    <li><a href="#Fresno">Fresno</a></li>
+  </ul>
+
+    <br><br>
+    <center><div id="San Francisco"><h2>San Francisco </h2></div></center>
+    <center><table border = "1"></center>
+    <thead>
+      <tr>
+        <th>Location </th>
+       <th> Food Type </th>
+        <th> Servings Available </th>
+        <th> Availabilty Time Frame </th>
+     </tr>
+    </thead>
+  </table>
+
+      <h6><center><a href="https://maps.app.goo.gl/QjT1KWVD4ZLt1DBf8">Ratatouille’s Rigatoni</a></center></h6>
+<table border = "1">
+     <thead>
+          <tr>
+          
+            <td><center> 1808 Paris St. </center></td>
+            <td><center> Non-Veg, Dairy Products </center</td>
+            <td> <center> 3 servings </center></td>
+           <td><center> Until 11:00 PM </center></td>
+          </tr> 
+      </thead>
+    </table>
+
+    <img src= "rest1.png" height= "300px">
+    
+<h6><center><a href="https://maps.app.goo.gl/QjT1KWVD4ZLt1DBf8"> Messi's World Cafe </a></center></h6>
+    <table border = "1">
+        <thead>
+          <td><center> 403 Sportes Rd. </center></td>
+          <td><center> Contains Peanuts </center></td>
+          <td> <center> 2 servings </center> </td>
+          <td> <center> Until 5:00 PM </center></td>
+        </tr>
+    </thead>
+  </table>
+    <img src= "rest2.png" height="300px">
+
+  <br><hr><br>
+
+ <div id="San Jose"> <h2> San Jose </h2></div>
+    <table border = "1">
+      <thead>
+      <tr>
+        <th> Location </th>
+        <th> Food Type </th>
+        <th> Servings Available </th>
+        <th> Availabilty Time Frame </th>
+      </tr>
+      </thead>
+    </table>
+      <h6><center><a href="https://maps.app.goo.gl/QjT1KWVD4ZLt1DBf8" style="font-decoration: none">Minnie Mouse's Breakfast House</a></center>
+      </h6>
+      <center><table border = "1"></center>
+      <thead>
+          <tr>
+            <td><center> 612 Funinside Pkwy. </center></td>
+            <td><center> Contains Egg </center></td>
+            <td> <center> 7 servings </center></td>
+            <td><center> Until 7:00 PM </center></td>
+          </tr> 
+      </thead>
+    </table>
+   
+      <img src= "rest3.png" height="300px">
+      <h6><center><a href="https://maps.app.goo.gl/QjT1KWVD4ZLt1DBf8">Noah's Baguettes</a></center></h6>
+       <center><table border = "1"></center>
+      <thead>
+          <tr>
+            <td><center>123 Bageles St.</center></td>
+            <td><center>Contains Tree Nuts</center></td>
+            <td> <center>1 servings</center> </td>
+            <td> <center>Until 11:30 PM </center></td>
+          </tr>
+      </thead>
+    </table>
+    <img src= "rest5.png" height="300px" width="400px">
+    <br><hr><br>
+     <div id="Oakland"> <h2> Oakland </h2></div>
+        <table border = "1">
+          <thead>
+              <tr>
+                <th>Location</th>
+                <th>Food Type</th>
+                <th>Servings Available</th>
+                <th>Availabilty Time Frame</th>
+              </tr>
+          </thead>
+        </table>
+         <h6> <center><a href="https://maps.app.goo.gl/QjT1KWVD4ZLt1DBf8">McBarnacles 24/7 Diner</a></center></h6>
+        <table border = "1">
+          <thead>
+              <tr>
+                <td><center>225 Donald Rd. </center></td>
+                <td><center>Non-Veg, Contains Egg</center></td>
+                <td> <center>4 servings </center></td>
+                <td><center>Until 12:30 AM</center></td>
+              </tr> 
+          </thead>
+        </table>
+        <img src= "rest4.png" height="300px">
+         <h6><center><a href="https://maps.app.goo.gl/QjT1KWVD4ZLt1DBf8">Starbarks Sushi</a></center></h6>
+        <table border = "1">
+          <thead>
+              <tr>
+                <td><center>916 Savory St.</center></td>
+                <td><center> Contains Fish</center></td>
+                <td> <center>2 servings</center> </td>
+                <td> <center>Until 5:30 PM </center></td>
+              </tr>
+          </thead>
+        </table>
+    <img src= "rest6.png" height="300px">
+    <br><hr><br>
+     <div id="Sacramento"> <h2> Sacramento </h2></div>
+        <table border = "1">
+          <thead>
+              <tr>
+                <th>Location</th>
+                <th>Food Type</th>
+                <th>Servings Available</th>
+                <th>Availabilty Time Frame</th>
+              </tr>
+          </thead>
+        </table>
+<h6> <center><a href="https://maps.app.goo.gl/QjT1KWVD4ZLt1DBf8">Palazzinar Pizzeria</a></center></h6>
+        <table border = "1">
+          <thead>
+              <tr>
+                <td><center>101 Rudolph Rd. </center></td>
+                <td><center>Non-Veg, Dairy Products</center></td>
+                <td> <center>6 servings </center></td>
+                <td><center>Until 6:00 PM</center></td>
+              </tr> 
+          </thead>
+        </table>
+        <img src= "rest7.png" height="300px">
+         <h6><center><a href="https://maps.app.goo.gl/QjT1KWVD4ZLt1DBf8">Yabby Yat Cat</a></center></64>
+           <br>
+        <table border = "1">
+          <thead>
+              <tr>
+                <td><center>916 Savory St.</center></td>
+                <td><center> Contains Wheat</center></td>
+                <td> <center>4 servings</center> </td>
+                <td> <center>Until 3:30 PM </center></td>
+              </tr>
+          </thead>
+        </table>
+    <img src= "rest8.png" height="300px">
+           <br><hr><br>
+     <div class="Vacaville"> <h2><center> Vacaville </h2></center></div>
+        <table border = "1">
+          <thead>
+              <tr>
+                <th>Location</th>
+                <th>Food Type</th>
+                <th>Servings Available</th>
+                <th>Availabilty Time Frame</th>
+              </tr>
+          </thead>
+        </table>
+        <h6> <center><a href="https://maps.app.goo.gl/QjT1KWVD4ZLt1DBf8">Vacaville's Burly Buffet</a></center></h6>
+        <table border = "1">
+          <thead>
+              <tr>
+                <td><center>405 Marley St. </center></td>
+                <td><center>Veg, Contains Tree Nuts</center></td>
+                <td> <center>1 serving </center></td>
+                <td><center>Until 2:00 PM</center></td>
+              </tr> 
+          </thead>
+        </table>
+    <img src= "rest9.png" height="300px">
+<h6><center><a href="https://maps.app.goo.gl/QjT1KWVD4ZLt1DBf8">Wonderful Winnie's</a></center></h6>
+        <table border="1">
+          <thead>
+              <tr>
+                <td><center>201 Castle St.</center></td>
+                <td><center> Contains Egg</center></td>
+                <td> <center>5 servings</center> </td>
+                <td> <center>Until 5:30 PM </center></td>
+              </tr>
+          </thead>
+        </table>
+    <img src= "rest10.png" height="300px">
+           <br><hr><br>
+     <div id="Fresno"> <h2> Fresno </h2></div>
+        <table border = "1">
+          <thead>
+              <tr>
+                <th>Location</th>
+                <th>Food Type</th>
+                <th>Servings Available</th>
+                <th>Availabilty Time Frame</th>
+              </tr>
+          </thead>
+        </table>
+        <h6> <center><a href="https://maps.app.goo.gl/QjT1KWVD4ZLt1DBf8">Ms. O's Hot Pot</a></center></h6>
+        <table border="1">
+          <thead>
+              <tr>
+                <td><center>1294 Lart Rd. </center></td>
+                <td><center>Veg, Contains Egg and Wheat</center></td>
+                <td> <center>3 serving </center></td>
+                <td><center>Until 7:00 PM</center></td>
+              </tr> 
+          </thead>
+        </table>
+    <img src= "rest11.png" height="300px">
+         <h6><center><a href="https://maps.app.goo.gl/QjT1KWVD4ZLt1DBf8">Bello Vita Bistro</a></center></h6>
+        <table border="1">
+          <thead>
+              <tr>
+                <td><center>502 Rayle St.</center></td>
+                <td><center> Contains Tree Nuts</center></td>
+                <td> <center>2 servings</center> </td>
+                <td> <center>Until 6:30 PM </center></td>
+              </tr>
+          </thead>
+        </table>
+    <img src= "rest12.png" height="300px">
+
+  </body>
+</html>

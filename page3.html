@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Food for Thought: Restaurant Interface</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Patrick Hand', cursive;
+    }
+    html {
+      height: 100%;
+      width: 100%;
+      scroll-behavior: smooth;
+      background-color:#99b899;
+    }
+       ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: seagreen;
+
+          top: 0;
+          width: 100%;
+
+        }
+
+        li {
+          float: left;
+        }
+
+        li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-family: "Raleway", sans-serif;
+        }
+
+        li a:hover:not(.active) {
+          background-color: #111;
+        }
+
+        .active {
+          background-color: #04AA6D;
+        }
+    h1{
+      text-align: center;
+    }
+#note{
+  width: 30%;
+  margin: 20px;
+  
+}
+
+
+  </style>
+  
+</head>
+
+<body>
+   <ul id="ul">
+    <li><a  href="index.html">Problem Statement</a></li>
+    <li><a href="page2.html">Restaurants Near Me</a></li>
+    <li><a class="active" href="page3.html">Apply as a Food Donor</a></li>
+    </ul>
+  <br>
+<h1>Apply as a Food Donor</h1><center>
+<p id="note">We want to donate the best quality food we possibly can, and that involves knowing all the specifics. Some people have allergies or dietary restrictions, and we are very mindful of that. Please input your restaurant information in the form below. Thank you for applying as 
+a food donor! <br> - The Food for Thought Team. </p> </center>
+ <br>
+  <center>
+<form action="page4.html">
+Do you have leftover food available?<br>
+  <input type="radio" id="foodavailyes" name="foodavail">
+  <label for="yes">Yes</label><br>
+  <input type="radio" id="foodavailno" name="foodavail" >No</label><br>
+<br>
+  
+  <label for="rname">Restaurant Name</label><br>
+  <input type="text" id="rname" name="rname" value=""><br>
+ 
+
+ <br>
+  <label for="location">Location</label><br>
+  <input type="text" id="location" name="location" value=""><br>
+<br>
+  <label for="foodtype">Food Specifics (ex: non-veg, contains nuts)</label><br>
+  <input type="text" id="foodtype" name="foodtype" value=""><br>
+<br>
+  <label for="serving">Number of Servings Available (enter a numeric only)</label><br>
+  <input type="text" id="serving" name="serving" value=""><br>
+<br>
+  <label for="serving">Availability Time Frame</label><br>
+  <input type="text" id="serving" name="serving" value=""><br>
+  <br>
+
+  <input type="checkbox" id="perishable" name="perishable" >
+  <label for="perishable">Food donation does not include perishables</label><br>
+
+  <br>
+  <input type="submit" value="Submit">
+
+</form>
+    </center>
+<br>
+
+  
+</body>
+
+</html>
